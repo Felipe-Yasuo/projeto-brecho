@@ -32,6 +32,7 @@ interface ImageClothingProps {
   path: string;
 }
 
+
 export function ClothingDetail() {
   const { id } = useParams();
   const [clothing, setClothing] = useState<ClothingProps | null>(null)

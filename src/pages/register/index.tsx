@@ -26,6 +26,8 @@ const schema = z.object({
     .string()
     .nonempty("O campo de senha é obrigatório")
     .min(6, "Tenha no minímo 6 digitos")
+    .regex(/[A-Z]/, "Precisa ter pelo menos uma letra maiúscula")
+    .regex(/[!@#\$%\^&\*]/, "Precisa ter pelo menos um caractere especial (!@#...)")
 });
 
 type FormData = z.infer<typeof schema>
