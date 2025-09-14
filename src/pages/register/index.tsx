@@ -66,7 +66,7 @@ export function Register() {
       })
       .catch((error) => {
         console.log("ERRO AO Cadastrar esse usuario");
-        toast.error("Erro ao Cadastrar Usuario")
+        toast.error("ERRO ao Cadastrar Usuario")
         console.log(error);
       })
   }
