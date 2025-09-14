@@ -166,7 +166,7 @@ export function ClothingDetail() {
           <p>{clothing.whatsapp}</p>
 
           <a
-            className="cursor-pointer bg-green-500 w-full text-white flex items-center justify-center gap-2 my-6 h-11 text-xl rounded-lg font-medium"
+            className="cursor-pointer bg-green-700 w-full text-white flex items-center justify-center gap-2 my-6 h-11 text-xl rounded-lg font-medium"
             target="_blank"
             rel="noopener noreferrer"
             href={`https://api.whatsapp.com/send?phone=${clothing.whatsapp}&text=Olá vi esse ${clothing.name} no site Brechó Canales e fiquei interessado`}
