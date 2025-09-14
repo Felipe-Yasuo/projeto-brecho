@@ -213,6 +213,7 @@ export function New() {
 
       <div className="w-full bg-white p-3 rounded-lg flex flex-col sm:flex-row items-center gap-2 m-2">
         <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
+          <p className="mb-2 font-medium">Nome da peça</p>
           <div className="mb-3">
             <Input
               type="text"
