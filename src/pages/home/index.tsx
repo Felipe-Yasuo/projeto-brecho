@@ -33,10 +33,10 @@ export function Home() {
   const [input, setInput] = useState("")
 
   useEffect(() => {
-    loadCars();
+    loadClothings();
   }, [])
 
-  function loadCars() {
+  function loadClothings() {
     const clothingRef = collection(db, "clothing")
     const queryRef = query(clothingRef, orderBy("created", "desc"))
 
@@ -67,7 +67,7 @@ export function Home() {
 
   async function handleSearchClothing() {
     if (input === '') {
-      loadCars();
+      loadClothings();
       return;
     }
     setClothing([]);
