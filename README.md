@@ -1,7 +1,15 @@
-Primeiro Projeto
-Brechó Canales é  um brechó online; é um movimento de moda consciente. Uma plataforma onde estilo e sustentabilidade se encontram, permitindo que roupas com histórias ganhem novos capítulos. Aqui, usuários podem anunciar peças usadas poucas vezes ou até mesmo novas, dando a elas a chance única de ser amadas novamente.
+👗 Brechó Canales
 
-Ferramentas Utilizadas:
-Frontend: React.js, Tailwind CSS, TypeScript
+✨ Moda consciente, estilo acessível e sustentabilidade.
+O Brechó Canales é uma plataforma online onde roupas com histórias ganham novos capítulos.
+Aqui, você pode anunciar peças novas ou usadas poucas vezes, permitindo que elas encontrem novos donos e continuem sendo amadas.
 
-banco de dados: firebase e supabase
+🚀 Tecnologias Utilizadas
+
+Frontend: React.js + Vite ⚡
+
+Estilização: Tailwind CSS 🎨
+
+Linguagem: TypeScript 🔒
+
+Banco de Dados & Autenticação: Firebase 🔥 e Supabase 🛠️
