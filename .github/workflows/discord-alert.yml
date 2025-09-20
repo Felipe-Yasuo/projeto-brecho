@@ -1,0 +1,22 @@
+name: Alerta no Discord
+
+on:
+  push:    # dispara sempre que fizer commit ou merge
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar mensagem para o Discord
+        uses: sarisia/actions-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          username: "GitHub Actions"
+          content: |
+            🚨 **Novo Commit no Repositório**
+            📦 Repositório: ${{ github.repository }}
+            👤 Autor: ${{ github.actor }}
+            📝 Mensagem: ${{ github.event.head_commit.message }}
+            🔗 Link: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
