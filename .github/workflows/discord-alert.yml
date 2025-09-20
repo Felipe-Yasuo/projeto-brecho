@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Enviar mensagem para o Discord
-        uses: sarisia/actions-discord@v1
+        uses: Ilshidur/action-discord@master
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          username: "GitHub Actions"
-          content: |
+          message: |
             🚨 **Novo Commit no Repositório**
             📦 Repositório: ${{ github.repository }}
             👤 Autor: ${{ github.actor }}
