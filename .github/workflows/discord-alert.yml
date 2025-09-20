@@ -1,7 +1,7 @@
 name: Alerta no Discord
 
 on:
-  push:    # dispara sempre que fizer commit ou merge
+  push:
     branches:
       - main
 
@@ -11,9 +11,10 @@ jobs:
     steps:
       - name: Enviar mensagem para o Discord
         uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: |
+          args: |
             🚨 **Novo Commit no Repositório**
             📦 Repositório: ${{ github.repository }}
             👤 Autor: ${{ github.actor }}
