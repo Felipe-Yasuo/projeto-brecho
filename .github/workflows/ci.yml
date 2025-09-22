@@ -26,4 +26,4 @@ jobs:
         run: npm run build
 
       - name: 🧪 Rodar testes unitários
-        run: npm run test -- --run
+        run: npm run test
