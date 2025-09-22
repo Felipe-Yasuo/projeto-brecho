@@ -10,4 +10,9 @@ describe("App", () => {
             screen.getByText(/Roupas novas e seminovas em todo o Brasil/i)
         ).toBeInTheDocument();
     });
+
+    it("deve exibir o link de Login na home", () => {
+        render(<RouterProvider router={router} />);
+        expect(screen.getByRole("link", { name: /login/i })).toBeInTheDocument();
+    });
 });
